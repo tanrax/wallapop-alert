@@ -1,0 +1,9 @@
+* Wallapop alert
+
+** Requisitos
+
+  pip install demiurge
+  
+** Configuración
+
+Ves a la página de http://es.wallapop.com/ y realiza una busqueda. A continuación pega la ruta en urlSearch
