@@ -6,4 +6,6 @@
   
 ** Configuración
 
-Ves a la página de http://es.wallapop.com/ y realiza una busqueda. A continuación pega la ruta en urlSearch
+Ves a la página de http://es.wallapop.com/ y realiza una busqueda. A continuación pega la ruta en /urlSearch/. 
+
+Esta preparado para trabajar con *Pushbullet*. Si quieres usarlo deberás sustituir /<You Token>/.
