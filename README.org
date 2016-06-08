@@ -2,7 +2,9 @@
 
 ** Requisitos
 
+#+BEGIN_SRC bash
   pip install demiurge
+#+END_SRC
   
 ** Configuración
 
