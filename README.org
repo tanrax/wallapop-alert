@@ -1,6 +1,7 @@
 * Wallapop alert
 
 ** Requisitos
+Python3 y *dimiurge*
 
 #+BEGIN_SRC bash
   pip install demiurge
