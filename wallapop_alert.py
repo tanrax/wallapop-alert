@@ -41,13 +41,15 @@ for item in results:
 
 # Check new items
 list_news = []
-if data_save != data_temp: 
+if data_save and data_save != data_temp:
     for item in data_temp:
         if item not in data_save:
             list_news.append(item)
 
 # Send alert
 for item in list_news:
+    print(item['title'])
+    print('-' * 10)
     sendPushBullet('Wallapop: ' + item['title'], item['price'], item['url'])
 
 # Save data
