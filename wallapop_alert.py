@@ -19,7 +19,7 @@ class Products(demiurge.Item):
 
     class Meta:
         selector = 'div.card-product'
-        
+
 class ProductDetails(demiurge.Item):
     description = demiurge.TextField(selector='p.card-product-detail-description')
     location = demiurge.TextField(selector='div.card-product-detail-location')
