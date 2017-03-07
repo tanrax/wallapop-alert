@@ -84,7 +84,7 @@ def extractArguments(argv):
     # Get variables
     keywordList = []
 
-    try:                                
+    try:
         opts, args = getopt.getopt(argv, "k:", ["keywords="])
 
     except getopt.GetoptError:
@@ -115,7 +115,7 @@ def extractArguments(argv):
 def main(argv):
     # Process command line arguments
     keywordList = extractArguments(argv)
-  
+
     # Loop through keywords
     for keyword in keywordList:
         print ("Searching", keyword)
@@ -124,3 +124,4 @@ def main(argv):
 
 if __name__ == "__main__":
     main(sys.argv[1:])
+
