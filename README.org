@@ -1,10 +1,19 @@
 * Wallapop alert
 
+Script en Python para revisar nuevos artículos que te interesen.
+
 ** Requisitos
 Python3 y *dimiurge*
+*** Instalar
 
 #+BEGIN_SRC bash
-  pip install demiurge
+  pip install -r requirements.txt
+#+END_SRC
+
+** Ejemplo de uso
+
+#+BEGIN_SRC bash
+./wallapop_alert.py -k gameboy
 #+END_SRC
   
 ** Configuración

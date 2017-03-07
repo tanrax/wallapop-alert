@@ -6,6 +6,7 @@ urlWallapop = 'http://es.wallapop.com'
 urlWallapopMobile = 'http://p.wallapop.com/i/'
 SAVE_LOCATION = os.path.join(tempfile.gettempdir(), 'alertWallapop.pkl')
 data_save = True
+push_bullet = False
 
 pushToken = '<your token here>'
 email = '<your email here>'
@@ -32,15 +33,17 @@ def sendPushBullet(pushToken, email, title, body, url):
 
 def wallAlert(urlSearch):
     # Load after data search
+    data_temp = []
     try:
         dataFile = open(SAVE_LOCATION, 'rb')
         data_save = pickle.load(dataFile)
     except:
+        data_save = open(SAVE_LOCATION, 'wb')
+        pickle.dump(data_temp, data_save)
         pass
 
     # Read web
     results = Products.all(urlSearch)
-    data_temp = []
 
     for item in results:
         data_temp.append({'title': item.title
@@ -66,7 +69,8 @@ def wallAlert(urlSearch):
         # Send Alert
         print(title, body, url)
         print('-' * 10)
-        sendPushBullet(pushToken, channelTag, title, body, applink)
+        if push_bullet:
+            sendPushBullet(pushToken, email, title, body, applink)
 
     # Save data
     data_save = open(SAVE_LOCATION, 'wb')
