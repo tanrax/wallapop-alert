@@ -26,8 +26,8 @@ class ProductDetails(demiurge.Item):
     class Meta:
         selector = 'div.card-product-detail'
 
-def sendPushBullet(pushToken, channelTag, title, body, url):
-    command = "curl -X POST -H 'Access-Token: {pushToken}' -F 'type=link' -F 'title={title}' -F 'body={body}' -F 'url={url}' -F 'email={channel}' 'https://api.pushbullet.com/v2/pushes'".format(pushToken = pushToken, email=email, title=title, body=body, url=url)
+def sendPushBullet(pushToken, email, title, body, url):
+    command = "curl -X POST -H 'Access-Token: {pushToken}' -F 'type=link' -F 'title={title}' -F 'body={body}' -F 'url={url}' -F 'email={email}' 'https://api.pushbullet.com/v2/pushes'".format(pushToken = pushToken, email=email, title=title, body=body, url=url)
     os.system(command)
 
 def wallAlert(urlSearch):
