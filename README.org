@@ -2,9 +2,7 @@
 
 Script en Python para revisar nuevos artículos que te interesen.
 
-** Requisitos
-Python3 y *dimiurge*
-*** Instalar
+** Instalar
 
 #+BEGIN_SRC bash
   pip install -r requirements.txt
