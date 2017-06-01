@@ -2,6 +2,10 @@
 
 Script en Python para revisar nuevos artículos que te interesen.
 
+* Actualización
+Implementado en web:
+http://wallaviso.com/ 
+
 ** Instalar
 
 #+BEGIN_SRC bash
