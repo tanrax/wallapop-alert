@@ -2,9 +2,8 @@
 
 Script en Python para revisar nuevos artículos que te interesen.
 
-* Actualización
-Implementado en web:
-http://wallaviso.com/ 
+* ¡MIGRADO!
+El código ha sido actualizado y optimizado para http://wallaviso.com/ 
 
 ** Instalar
 
