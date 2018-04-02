@@ -3,7 +3,7 @@
 Script en Python para revisar nuevos artículos que te interesen.
 
 * ¡MIGRADO!
-El código no lo mantengo en este repositorio. Mis esfuerzos se centran en actualizar y optimizar http://wallaviso.com/ . Una aplicación web que realiza la misma función. Eres libre de realizar un Fork de este script.
+El código no lo mantengo en este repositorio. Mis esfuerzos se centran en actualizar y optimizar http://www.wallaviso.com/ . Una aplicación web que realiza la misma función. Eres libre de realizar un Fork de este script.
 
 ** Instalar
 
